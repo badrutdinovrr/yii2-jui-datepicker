@@ -1,0 +1,37 @@
+{
+  "name": "badrutdinovrr/yii2-jui-datepicker",
+  "description": "Yii 2 jQuery UI DatePicker Widget",
+  "keywords": [
+    "yii2",
+    "jquery",
+    "jquery-ui",
+    "date",
+    "picker",
+    "datepicker"
+  ],
+  "homepage": "http://jqueryui.com/datepicker/",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ivan Chistyakov",
+      "email": "ivan.chkv@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": ">=2.0.4",
+    "yiisoft/yii2-jui": "2.*",
+    "bower-asset/jquery-ui": "1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "yii\\jui\\datepicker\\": ""
+    }
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}
