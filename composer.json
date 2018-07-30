@@ -16,12 +16,19 @@
     {
       "name": "Ivan Chistyakov",
       "email": "ivan.chkv@gmail.com"
+    },
+    {
+      "name": "Rustam Badrutdinov",
+      "email": "delightalmighty@gmail.com"
     }
   ],
   "require": {
     "yiisoft/yii2": ">=2.0.4",
     "yiisoft/yii2-jui": "2.*",
     "bower-asset/jquery-ui": "1.*"
+  },
+  "require-dev": {
+    "ivan-chkv/yii2-phpunit": "2.*"
   },
   "autoload": {
     "psr-4": {
