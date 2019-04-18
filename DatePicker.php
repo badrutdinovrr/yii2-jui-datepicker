@@ -123,6 +123,15 @@ class DatePicker extends InputWidget
             $output = Html::textInput(false, $value, $this->options);
             $output .= Html::hiddenInput($this->name, $altValue, $this->altOptions);
         }
+        $this->addScripts($output);
+        return $output;
+    }
+
+    /**
+     * @param $output
+     */
+    protected function addScripts(&$output)
+    {
         $js = 'jQuery(\'#' . $this->options['id'] . '\').datepicker(' . Json::htmlEncode($this->clientOptions) . ');';
         if (Yii::$app->getRequest()->getIsAjax()) {
             $output .= Html::script($js);
@@ -133,6 +142,5 @@ class DatePicker extends InputWidget
             DatePickerLanguageFixAsset::register($view);
             $view->registerJs($js);
         }
-        return $output;
     }
 }
